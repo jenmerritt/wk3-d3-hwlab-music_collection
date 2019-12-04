@@ -12,6 +12,9 @@ artist1 = Artist.new({
 
 artist1.save()
 
+artist1.name = "Mariah Carey"
+artist1.update()
+
 album1 = Album.new({
   'title' => "Whitney",
   'genre' => "Pop",
@@ -19,6 +22,11 @@ album1 = Album.new({
   })
 
 album1.save()
+
+album1.title = "Greatest Hits"
+album1.update()
+
+
 
 binding.pry
 nil
